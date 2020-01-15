@@ -1,6 +1,0 @@
-- [Demo](README)
-- [外部Readme](remotemd)
-- [Markdown](zh-cn/)
-- **Links**
-- [Github](https://github.com/jhildenbiddle/docsify-themeable)
-- [NPM](https://www.npmjs.com/package/docsify-themeable)
