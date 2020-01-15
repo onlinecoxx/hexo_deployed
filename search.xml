@@ -10,37 +10,16 @@
 ]]></content>
   </entry>
   <entry>
-    <title>CentOS7下Tomcat启动慢的原因及解决方案</title>
-    <url>/static_blog/2017/12/02/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a data-fancybox="gallery" href="https://cdn.v2ex.com/avatar/7672/c5e9/145658_large.png?m=1452926414" target="_blank" rel="noopener">
-    <img src="https://cdn.v2ex.com/avatar/7672/c5e9/145658_large.png?m=1452926414">
-</a>
-
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
-
-<p>$$\begin{equation}<br>e=mc^2<br>\end{equation}\tag{1}$$</p>
-<h3 id="Use-tag-to-tag-equations"><a href="#Use-tag-to-tag-equations" class="headerlink" title="Use \tag to tag equations"></a>Use <code>\tag</code> to tag equations</h3><p>Sometimes, you want to use more «exotic» style to refer your equation. You can use \tag{} to achieve this. For example:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><code class="hljs pre">$$x+1\over\sqrt&#123;1-x^2&#125; \tag&#123;i&#125;\label&#123;eq_tag&#125;$$<br></code></pre></td></tr></table></figure>
-
-<p>$$x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag}$$</p>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <title>博客的开场白--新期待新征程</title>
+    <url>/static_blog/2019/01/16/hello-world/</url>
+    <content><![CDATA[<h3 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h3><p>欢迎大家能够有心来看我的博客，这是我第一次写博客。其实原因非常的简单就是想与大家分享好的东西，记忆一些东西，熟话说好记性不如烂笔头。我就是曾经以为自己记忆力非常不错的小伙，但后来发现自己的写作能力太差，甚至表达思维比较混乱，我还是推荐大家多进行写作，不断地发现问题，不断提炼和修改，总有一天能发挥自己内在能力。</p>
+<h3 id="祝福话语"><a href="#祝福话语" class="headerlink" title="祝福话语"></a>祝福话语</h3><p>加油，相信自己能行。希望活出想象中的自己！</p>
 ]]></content>
       <categories>
-        <category>云服务器</category>
+        <category>心得</category>
       </categories>
       <tags>
-        <tag>centOS</tag>
-        <tag>tomcat</tag>
+        <tag>开场白</tag>
       </tags>
   </entry>
 </search>
