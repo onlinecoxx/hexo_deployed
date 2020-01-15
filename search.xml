@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>PRELUDE꞉ A TASTE OF SCALA</title>
-    <url>/2020/01/14/scala/index/</url>
+    <url>/static_blog/2020/01/14/scala/index/</url>
     <content><![CDATA[<p>Our hope in this book is to demonstrate that Scala is a beautiful, modern, expressive programming language. To help demonstrate that, in this first chapter we’ll jump right in and provide a whirlwind tour of Scala’s main features. After this tour, the book begins with a more traditional “Getting Started” chapter.</p>
 <blockquote>
 <p>In this book we assume that you’ve used a language like Java before, and are ready to see a series of Scala examples to get a feel for what the language looks like. Although it’s not 100% necessary, it will also help if you’ve already downloaded and installed Scala so you can test the examples as you go along. You can also test these examples online with ScalaFiddle.io.</p>
@@ -11,7 +11,7 @@
   </entry>
   <entry>
     <title>CentOS7下Tomcat启动慢的原因及解决方案</title>
-    <url>/2017/12/02/hello-world/</url>
+    <url>/static_blog/2017/12/02/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a data-fancybox="gallery" href="https://cdn.v2ex.com/avatar/7672/c5e9/145658_large.png?m=1452926414" target="_blank" rel="noopener">
     <img src="https://cdn.v2ex.com/avatar/7672/c5e9/145658_large.png?m=1452926414">
