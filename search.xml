@@ -1,17 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>PRELUDE꞉ a TASTE of SCALA</title>
-    <url>/static_blog/2020/01/14/scala/index/</url>
-    <content><![CDATA[<p>Our hope in this book is to demonstrate that Scala is a beautiful, modern, expressive programming language. To help demonstrate that, in this first chapter we’ll jump right in and provide a whirlwind tour of Scala’s main features. After this tour, the book begins with a more traditional “Getting Started” chapter.</p>
-<blockquote>
-<p>In this book we assume that you’ve used a language like Java before, and are ready to see a series of Scala examples to get a feel for what the language looks like. Although it’s not 100% necessary, it will also help if you’ve already downloaded and installed Scala so you can test the examples as you go along. You can also test these examples online with ScalaFiddle.io.</p>
-</blockquote>
+    <title>Installation</title>
+    <url>/2020/01/17/raw-01/</url>
+    <content><![CDATA[<h1 align="center"><a href="https://github.com/HubSpot/pace" target="_blank" rel="noopener">Progress bar</a> for <a href="https://github.com/theme-next" target="_blank" rel="noopener">NexT</a></h1>
+
+<h1 align="center">Installation</h1>
+
+<h2>If you want to use the CDN instead of clone this repo, please jump to the Step 3.</h2>
+
+<h2 align="center">Step 1 &rarr; Go to NexT dir</h2>
+
+<p>Change dir to <strong>NexT</strong> directory. There must be <code>layout</code>, <code>source</code>, <code>languages</code> and other directories:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ ls</span><br><span class="line">_config.yml  crowdin.yml  docs  gulpfile.js  languages  layout  LICENSE.md  package.json  README.md  scripts  <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+
+<h2 align="center">Step 2 &rarr; Get module</h2>
+
+<p>Install module to <code>source/lib</code> directory:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-pace <span class="built_in">source</span>/lib/pace</span><br></pre></td></tr></table></figure>
+
+<h2 align="center">Step 3 &rarr; Set it up</h2>
+
+<p>Enable module in <strong>NexT</strong> <code>_config.yml</code> file and select your theme:</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">pace:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Themes list:</span></span><br><span class="line">  <span class="comment"># big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple</span></span><br><span class="line">  <span class="comment"># corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal</span></span><br><span class="line">  <span class="attr">theme:</span> <span class="string">minimal</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>And, if you wants to use the CDN, then need to set:</strong> (you also need to find your corresponding theme css link in <a href="https://www.jsdelivr.com/package/npm/pace-js?path=themes" target="_blank" rel="noopener">jsdelivr</a>)</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="attr">pace:</span> <span class="string">//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js</span></span><br><span class="line">  <span class="attr">pace_css:</span> <span class="string">//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css</span></span><br></pre></td></tr></table></figure>
+
+<h1 align="center">Update</h1>
+
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next/<span class="built_in">source</span>/lib/pace</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+
+<p>$$ \oint_{C} x^3, dx + 4y^2, dy $$</p>
 ]]></content>
   </entry>
   <entry>
+    <title>如何使用WPS或者Excel的数据透视表功能</title>
+    <url>/2020/01/16/excel-pivot/</url>
+    <content><![CDATA[<h2 id="数据透视图-data-pivot-picture"><a href="#数据透视图-data-pivot-picture" class="headerlink" title="数据透视图(data pivot picture)"></a>数据透视图(data pivot picture)</h2><p>可使用数据透视表汇总、分析、浏览和呈现汇总数据。数据透视图通过对数据透视表中的汇总数据添加可视化效果来对其进行补充，以便用户轻松查看比较、模式和趋势。借助数据透视表和数据透视图，用户可对企业中的关键数据做出明智决策。此外，还可以连接外部数据源（例如 SQL Server 表、SQL Server Analysis Services 多维数据集、Azure Marketplace、Office 数据连接 (.odc) 文件、XML 文件、Access 数据库和文本文件），创建数据透视表，或使用现有数据透视表创建新表。</p>
+<h2 id="关于数据透视表"><a href="#关于数据透视表" class="headerlink" title="关于数据透视表"></a>关于数据透视表</h2><p>数据透视表是一种可以快速汇总大量数据的交互式方法。可用于深入分析数值数据和回答有关数据的一些预料之外的问题。数据透视表专门针对以下用途设计：<br>以多种用户友好的方式查询大量数据。</p>
+<ul>
+<li><p>分类汇总和聚合数值数据，按类别和子类别汇总数据，以及创建自定义计算和公式。</p>
+</li>
+<li><p>展开和折叠数据级别以重点关注结果，以及深入查看感兴趣的区域的汇总数据的详细信息。</p>
+</li>
+<li><p>可以通过将行移动到列或将列移动到行（也称为“透视”），查看源数据的不同汇总。</p>
+</li>
+<li><p>通过对最有用、最有趣的一组数据执行筛选、排序、分组和条件格式设置，可以重点关注所需信息。</p>
+</li>
+<li><p>提供简明、有吸引力并且带有批注的联机报表或打印报表。</p>
+</li>
+</ul>
+<p><img data-src="picture_01.png" alt="数据透视表的位置" title="图1-1 数据透视表在WPS位置"></p>
+<p><video src="https://gateway.pinata.cloud/ipns/io-oi.me/videos/flying-clouds-720p.mp4" controls></video></p>
+<div class="note info">
+            <p>文字内容 (md info supported) </p>
+          </div>
+
+<ul>
+<li><input disabled="" type="checkbox"> 支持以 PDF 格式导出文稿</li>
+<li><input disabled="" type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+<li><input checked="" disabled="" type="checkbox"> 新增 Todo 列表功能</li>
+<li><input checked="" disabled="" type="checkbox"> 修复 LaTex 公式渲染问题</li>
+<li><input checked="" disabled="" type="checkbox"> 新增 LaTex 公式编号功能</li>
+</ul>
+<div class="tabs" id="选项卡"><ul class="nav-tabs"><li class="tab"><a href="#选项卡-1">选项卡 1</a></li><li class="tab active"><a href="#选项卡-2">选项卡 2</a></li><li class="tab"><a href="#选项卡-3">选项卡 3</a></li></ul><div class="tab-content"><div class="tab-pane" id="选项卡-1"><p><strong>这是选项卡 1</strong> 呵呵哈哈哈哈哈哈</p></div><div class="tab-pane active" id="选项卡-2"><p><strong>这是选项卡 2</strong> 额。。。</p></div><div class="tab-pane" id="选项卡-3"><p><strong>这是选项卡 3</strong> 哇，你找到我了！</p></div></div></div>
+
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>王二狗</strong><cite>IBM外包的故事</cite></footer></blockquote>]]></content>
+      <tags>
+        <tag>wps excel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客的开场白--新期待新征程</title>
-    <url>/static_blog/2019/01/16/hello-world/</url>
+    <url>/2020/01/16/hello-world/</url>
     <content><![CDATA[<h3 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h3><p>欢迎大家能够有心来看我的博客，这是我第一次写博客。其实原因非常的简单就是想与大家分享好的东西，记忆一些东西，熟话说好记性不如烂笔头。我就是曾经以为自己记忆力非常不错的小伙，但后来发现自己的写作能力太差，甚至表达思维比较混乱，我还是推荐大家多进行写作，不断地发现问题，不断提炼和修改，总有一天能发挥自己内在能力。</p>
 <h3 id="祝福话语"><a href="#祝福话语" class="headerlink" title="祝福话语"></a>祝福话语</h3><p>加油，相信自己能行。希望活出想象中的自己！</p>
 ]]></content>
