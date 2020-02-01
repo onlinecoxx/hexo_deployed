@@ -1233,7 +1233,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #590ab4;
+  background: #0dffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2681,7 +2681,7 @@ hr {
   margin-bottom: 0.25em;
 }
 .posts-expand .post-meta {
-  margin-bottom: 0.68em;
+  margin-bottom: 30px;
   font-size: 0.08em;
 }
 .content {
@@ -2703,4 +2703,76 @@ hr {
 }
 body {
   font-size: 14px;
+}
+ol {
+  margin-top: 0.4rem;
+  padding: 0 0 0 0.8rem;
+  list-style: none;
+  counter-reset: ol-li;
+}
+.posts-expand .post-body ol li:before {
+  display: block;
+  float: left;
+  width: 17px;
+  height: 17px;
+  line-height: 16px;
+  margin: 0.4rem 12px 0 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #49b1f5;
+  border-radius: 50%;
+  text-align: center;
+  content: counter(ol-li);
+  counter-increment: ol-li;
+}
+.post-body .image-caption,
+.post-body .figure .caption {
+  font-weight: 400;
+  line-height: 1.75;
+}
+.posts-expand .post-body h2::before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "🌞";
+  margin-right: 16px;
+  font: 18px/18px FontAwesome;
+}
+.posts-expand .post-body h1::before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "⛅";
+  font-size: 18px;
+  line-height: 18px;
+  margin-right: 16px;
+}
+.posts-expand .post-body h3::before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "🔍";
+  margin-right: 16px;
+  font: 18px/18px FontAwesome;
+}
+.posts-expand .post-body h1,
+.posts-expand .post-body h2,
+.posts-expand .post-body h3,
+.posts-expand .post-body h4,
+.posts-expand .post-body h5,
+.posts-expand .post-body h6 {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0 10px;
 }

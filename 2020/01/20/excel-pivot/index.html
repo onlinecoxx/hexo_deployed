@@ -33,8 +33,8 @@
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: true,
     mediumzoom: true,
-    lazyload: true,
-    pangu: true,
+    lazyload: false,
+    pangu: false,
     comments: {"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},
     algolia: {
       appID: '',
@@ -49,22 +49,27 @@
   };
 </script>
 
-  <meta name="description" content="可用于深入分析数值数据和回答有关数据的一些预料之外的问题">
+  <meta name="description" content="掌握基本数据透视的使用方法，结合实例数据进行有关方法的演示">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何使用WPS或者Excel的数据透视表功能">
-<meta property="og:url" content="https://onlinecoxx.github.io/static_blog/2020/01/16/excel-pivot/index.html">
+<meta property="og:url" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/index.html">
 <meta property="og:site_name" content="觉悟小白的成长路">
-<meta property="og:description" content="可用于深入分析数值数据和回答有关数据的一些预料之外的问题">
+<meta property="og:description" content="掌握基本数据透视的使用方法，结合实例数据进行有关方法的演示">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://onlinecoxx.github.io/static_blog/2020/01/16/excel-pivot/picture_01.png">
-<meta property="article:published_time" content="2020-01-16T04:59:03.000Z">
-<meta property="article:modified_time" content="2020-01-18T11:56:00.540Z">
+<meta property="og:image" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/excel_operator_create_01.gif">
+<meta property="og:image" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/excel_operator_update_origin.gif">
+<meta property="og:image" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/excel_operator_transform_univer_table.gif">
+<meta property="og:image" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/excel_operator_pviot_sort.gif">
+<meta property="og:image" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/excel_operator_pviot_insert_symbol.gif">
+<meta property="og:image" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/excel_operator_filter_generator.gif">
+<meta property="article:published_time" content="2020-01-20T04:59:03.000Z">
+<meta property="article:modified_time" content="2020-02-01T15:03:25.715Z">
 <meta property="article:author" content="coxx_jie">
 <meta property="article:tag" content="wps excel">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://onlinecoxx.github.io/static_blog/2020/01/16/excel-pivot/picture_01.png">
+<meta name="twitter:image" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/excel_operator_create_01.gif">
 
-<link rel="canonical" href="https://onlinecoxx.github.io/static_blog/2020/01/16/excel-pivot/">
+<link rel="canonical" href="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/">
 
 
 <script id="page-configurations">
@@ -201,7 +206,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://onlinecoxx.github.io/static_blog/2020/01/16/excel-pivot/">
+    <link itemprop="mainEntityOfPage" href="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/static_blog/images/avatar.gif">
@@ -224,18 +229,18 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-01-16 12:59:03" itemprop="dateCreated datePublished" datetime="2020-01-16T12:59:03+08:00">2020-01-16</time>
+              <time title="创建时间：2020-01-20 12:59:03" itemprop="dateCreated datePublished" datetime="2020-01-20T12:59:03+08:00">2020-01-20</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-18 19:56:00" itemprop="dateModified" datetime="2020-01-18T19:56:00+08:00">2020-01-18</time>
+                <time title="修改时间：2020-02-01 23:03:25" itemprop="dateModified" datetime="2020-02-01T23:03:25+08:00">2020-02-01</time>
               </span>
 
           
-            <span id="/static_blog/2020/01/16/excel-pivot/" class="post-meta-item leancloud_visitors" data-flag-title="如何使用WPS或者Excel的数据透视表功能" title="阅读次数">
+            <span id="/static_blog/2020/01/20/excel-pivot/" class="post-meta-item leancloud_visitors" data-flag-title="如何使用WPS或者Excel的数据透视表功能" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -250,13 +255,13 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/static_blog/2020/01/16/excel-pivot/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/static_blog/2020/01/16/excel-pivot/" itemprop="commentCount"></span>
+    <a title="valine" href="/static_blog/2020/01/20/excel-pivot/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/static_blog/2020/01/20/excel-pivot/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-            <div class="post-description">可用于深入分析数值数据和回答有关数据的一些预料之外的问题</div>
+            <div class="post-description">掌握基本数据透视的使用方法，结合实例数据进行有关方法的演示</div>
 
         </div>
       </header>
@@ -267,37 +272,71 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="数据透视图-data-pivot-picture"><a href="#数据透视图-data-pivot-picture" class="headerlink" title="数据透视图(data pivot picture)"></a>数据透视图(data pivot picture)</h2><p>可使用数据透视表汇总、分析、浏览和呈现汇总数据。数据透视图通过对数据透视表中的汇总数据添加可视化效果来对其进行补充，以便用户轻松查看比较、模式和趋势。借助数据透视表和数据透视图，用户可对企业中的关键数据做出明智决策。此外，还可以连接外部数据源（例如 SQL Server 表、SQL Server Analysis Services 多维数据集、Azure Marketplace、Office 数据连接 (.odc) 文件、XML 文件、Access 数据库和文本文件），创建数据透视表，或使用现有数据透视表创建新表。</p>
-<h2 id="关于数据透视表"><a href="#关于数据透视表" class="headerlink" title="关于数据透视表"></a>关于数据透视表</h2><p>数据透视表是一种可以快速汇总大量数据的交互式方法。可用于深入分析数值数据和回答有关数据的一些预料之外的问题。数据透视表专门针对以下用途设计：<br>以多种用户友好的方式查询大量数据。</p>
-<ul>
-<li><p>分类汇总和聚合数值数据，按类别和子类别汇总数据，以及创建自定义计算和公式。</p>
-</li>
-<li><p>展开和折叠数据级别以重点关注结果，以及深入查看感兴趣的区域的汇总数据的详细信息。</p>
-</li>
-<li><p>可以通过将行移动到列或将列移动到行（也称为“透视”），查看源数据的不同汇总。</p>
-</li>
-<li><p>通过对最有用、最有趣的一组数据执行筛选、排序、分组和条件格式设置，可以重点关注所需信息。</p>
-</li>
-<li><p>提供简明、有吸引力并且带有批注的联机报表或打印报表。</p>
-</li>
-</ul>
-<p><img data-src="picture_01.png" alt="数据透视表的位置" title="图1-1 数据透视表在WPS位置"></p>
-<p><video src="https://gateway.pinata.cloud/ipns/io-oi.me/videos/flying-clouds-720p.mp4" controls></video></p>
-<div class="note info">
-            <p>文字内容 (md info supported) </p>
+        <div class="note info">
+            <p>本文使用为WPS2019、Office2016</p>
           </div>
 
-<ul>
-<li><input disabled="" type="checkbox"> 支持以 PDF 格式导出文稿</li>
-<li><input disabled="" type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
-<li><input checked="" disabled="" type="checkbox"> 新增 Todo 列表功能</li>
-<li><input checked="" disabled="" type="checkbox"> 修复 LaTex 公式渲染问题</li>
-<li><input checked="" disabled="" type="checkbox"> 新增 LaTex 公式编号功能</li>
-</ul>
-<div class="tabs" id="选项卡"><ul class="nav-tabs"><li class="tab"><a href="#选项卡-1">选项卡 1</a></li><li class="tab active"><a href="#选项卡-2">选项卡 2</a></li><li class="tab"><a href="#选项卡-3">选项卡 3</a></li></ul><div class="tab-content"><div class="tab-pane" id="选项卡-1"><p><strong>这是选项卡 1</strong> 呵呵哈哈哈哈哈哈</p></div><div class="tab-pane active" id="选项卡-2"><p><strong>这是选项卡 2</strong> 额。。。</p></div><div class="tab-pane" id="选项卡-3"><p><strong>这是选项卡 3</strong> 哇，你找到我了！</p></div></div></div>
+<p>温馨提示: 为了更好的帮助大家了解教程，按照等级将教程进行了划分逐步，仅需查看不会部分！</p>
+<div class="tabs" id="基本归纳"><ul class="nav-tabs"><li class="tab active"><a href="#基本归纳-1">1.基本操作</a></li><li class="tab"><a href="#基本归纳-2">2.布局有格式调整</a></li><li class="tab"><a href="#基本归纳-3">3.组合/多表合并</a></li><li class="tab"><a href="#基本归纳-4">4.数据分析例子</a></li></ul><div class="tab-content"><div class="tab-pane active" id="基本归纳-1"><p><strong>以下为基础配置，点击可调至对应教程：</strong></p>
+<ol>
+<li><a href="#创建数据透视表">创建数据透视表</a></li>
+<li><a href="#刷新所有数据透视表-更改数据源">刷新所有数据透视表/更改数据源</a></li>
+<li><a href="#转换为普通表格">转换为普通表格</a></li>
+<li><a href="#数据透视表排序">数据透视表排序</a></li>
+<li><a href="#数据透视表插入公式">数据透视表插入公式</a></li>
+<li><a href="#使用切片器">使用切片器</a></li>
+</ol></div><div class="tab-pane" id="基本归纳-2"><ol>
+<li>计数项改为求和项</li>
+<li>批量隐藏和显示汇总行</li>
+<li>刷新后格式保持不变</li>
+<li>数据透视图</li>
+<li>条件格式</li>
+</ol></div><div class="tab-pane" id="基本归纳-3"><ol>
+<li>日期组合</li>
+<li>根据数字期间组合</li>
+<li>多区域合并生成</li>
+</ol></div><div class="tab-pane" id="基本归纳-4"><ol>
+<li>各部门人数占比</li>
+<li>各个年龄段人数和占比</li>
+<li>各个部门各年龄段占比</li>
+<li>各部门学历统计</li>
+<li>按年份统计各部门入职人数</li>
+</ol></div></div></div>
 
-<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
-<footer><strong>王二狗</strong><cite>IBM外包的故事</cite></footer></blockquote>
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="数据透视图-表-Data-Pivot-Figure"><a href="#数据透视图-表-Data-Pivot-Figure" class="headerlink" title="数据透视图/表(Data Pivot Figure)"></a>数据透视图/表(Data Pivot Figure)</h3><p>可使用数据透视表汇总、分析、浏览和呈现汇总数据。数据透视图通过对数据透视表中的汇总数据添加可视化效果来对其进行补充，以便用户轻松查看比较、模式和趋势。借助数据透视表和数据透视图，用户可对企业中的关键数据做出明智决策。此外，还可以连接外部数据源（例如 SQL Server 表、SQL Server Analysis Services 多维数据集、Azure Marketplace、Office 数据连接 (.odc) 文件、XML 文件、Access 数据库和文本文件），创建数据透视表，或使用现有数据透视表创建新表。</p>
+<h3 id="关于数据透视表"><a href="#关于数据透视表" class="headerlink" title="关于数据透视表"></a>关于数据透视表</h3><p>数据透视表是一种可以快速汇总大量数据的交互式方法。可用于深入分析数值数据和回答有关数据的一些预料之外的问题。数据透视表专门针对以下用途设计：<br>以多种用户友好的方式查询大量数据。</p>
+<ol>
+<li><p><strong>分类汇总和聚合数值数据，按类别和子类别汇总数据，以及创建自定义计算和公式。</strong></p>
+</li>
+<li><p><strong>展开和折叠数据级别以重点关注结果，以及深入查看感兴趣的区域的汇总数据的详细信息。</strong></p>
+</li>
+<li><p><strong>可以通过将行移动到列或将列移动到行（也称为“透视”），查看源数据的不同汇总。</strong></p>
+</li>
+<li><p><strong>通过对最有用、最有趣的一组数据执行筛选、排序、分组和条件格式设置，可以重点关注所需信息。</strong></p>
+</li>
+<li><p><strong>提供简明、有吸引力并且带有批注的联机报表或打印报表。</strong></p>
+</li>
+</ol>
+<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="创建数据透视表"><a href="#创建数据透视表" class="headerlink" title="创建数据透视表"></a>创建数据透视表</h3><p>在Excel的“插入”选项卡中（WPS在“数据”选项卡中），选中对应数据表“点击数据透视表”，建立数据头数据透视表。默认先选择列一行后选择数值类维度多行，Excel会自动识别。</p>
+<p><img src="excel_operator_create_01.gif" alt="2"></p>
+<h3 id="刷新所有数据透视表-更改数据源"><a href="#刷新所有数据透视表-更改数据源" class="headerlink" title="刷新所有数据透视表/更改数据源"></a>刷新所有数据透视表/更改数据源</h3><div class="note warning">
+            <p>默认情况下选择的数据后Excel和WPS的数据将不发生改变，除非进行手动更新，而手动更新数据信息，在更改数据源左边选项卡上有个“刷新”，点击选择便可以更新相关数据源信息。</p>
+          </div>
+
+<p>对于数据源的修改，选中需要修改数据源对应生成的透视表，在“分析”选项卡中，更改数据源选项，当然选项卡的数据源支持多种数据格式，甚至可以关联其他Excel工作簿进行分析。</p>
+<p><img src="excel_operator_update_origin.gif" alt="2"></p>
+<h3 id="转换为普通表格"><a href="#转换为普通表格" class="headerlink" title="转换为普通表格"></a>转换为普通表格</h3><p>转换为普通表操作非常简单，就直接复制。最后根据自己的需求选择粘贴格式即可。</p>
+<p><img src="excel_operator_transform_univer_table.gif" alt="3"></p>
+<h3 id="数据透视表排序"><a href="#数据透视表排序" class="headerlink" title="数据透视表排序"></a>数据透视表排序</h3><p>选择对应透视表的维度项已经默认和筛选过滤的功能，可以自行选择排序方式，Excel会自动根据先选择先排序后选后排的方式进行排序显示，注：文字安装字典顺序排列。</p>
+<p><img src="excel_operator_pviot_sort.gif" alt="3"></p>
+<h3 id="数据透视表插入公式"><a href="#数据透视表插入公式" class="headerlink" title="数据透视表插入公式"></a>数据透视表插入公式</h3><p>想要几个维度经过一定逻辑表达生成一个复合新维度，这个时候需要用到插入字段，选择组合成表达式。</p>
+<p><img src="excel_operator_pviot_insert_symbol.gif" alt="3"></p>
+<h3 id="使用切片器"><a href="#使用切片器" class="headerlink" title="使用切片器"></a>使用切片器</h3><p>有时候我们针对一个分类变量进行观察影响程度，这个时候需要用到切片器帮助我们查看每一个小细项数据维度的真实情况，便于增强关注度。</p>
+<p><img src="excel_operator_filter_generator.gif" alt="3"></p>
+<p><a href="http://www.sohu.com/a/288764846_723240" target="_blank" rel="noopener" class="LinkCard">数据透视表-实用技巧大全</a></p>
+<p>&lt;待续…&gt;</p>
+
     </div>
 
     
@@ -338,7 +377,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://onlinecoxx.github.io/static_blog/2020/01/16/excel-pivot/" title="如何使用WPS或者Excel的数据透视表功能">https://onlinecoxx.github.io/static_blog/2020/01/16/excel-pivot/</a>
+    <a href="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/" title="如何使用WPS或者Excel的数据透视表功能">https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -362,10 +401,7 @@
     <a href="/static_blog/2020/01/16/hello-world/" rel="prev" title="博客的开场白--新期待新征程">
       <i class="fa fa-chevron-left"></i> 博客的开场白--新期待新征程
     </a></div>
-      <div class="post-nav-item">
-    <a href="/static_blog/2020/01/17/raw-01/" rel="next" title="Installation">
-      Installation <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -426,7 +462,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据透视图-data-pivot-picture"><span class="nav-number">1.</span> <span class="nav-text">数据透视图(data pivot picture)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于数据透视表"><span class="nav-number">2.</span> <span class="nav-text">关于数据透视表</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据透视图-表-Data-Pivot-Figure"><span class="nav-number">1.1.</span> <span class="nav-text">数据透视图&#x2F;表(Data Pivot Figure)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于数据透视表"><span class="nav-number">1.2.</span> <span class="nav-text">关于数据透视表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本操作"><span class="nav-number">2.</span> <span class="nav-text">基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建数据透视表"><span class="nav-number">2.1.</span> <span class="nav-text">创建数据透视表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#刷新所有数据透视表-更改数据源"><span class="nav-number">2.2.</span> <span class="nav-text">刷新所有数据透视表&#x2F;更改数据源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转换为普通表格"><span class="nav-number">2.3.</span> <span class="nav-text">转换为普通表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据透视表排序"><span class="nav-number">2.4.</span> <span class="nav-text">数据透视表排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据透视表插入公式"><span class="nav-number">2.5.</span> <span class="nav-text">数据透视表插入公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用切片器"><span class="nav-number">2.6.</span> <span class="nav-text">使用切片器</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -442,7 +478,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/static_blog/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -507,8 +543,6 @@
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
   <script src="/static_blog/lib/velocity/velocity.min.js"></script>
   <script src="/static_blog/lib/velocity/velocity.ui.min.js"></script>
 
@@ -621,6 +655,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
     const live2d_path = "/static_blog//lib/live2d-widget/"
   </script>
   <script type="text/javascript" src="/static_blog//lib/live2d-widget/autoload.js"></script>
+  <script type="text/javascript" src="/static_blog//js/link-card.js"></script>
     <div id="pjax">
   
 
@@ -633,7 +668,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
       quicklink({
         timeout: 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'https://onlinecoxx.github.io/static_blog/2020/01/16/excel-pivot/',]
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/',]
       });
       });
   </script>
