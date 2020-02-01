@@ -63,7 +63,7 @@
 <meta property="og:image" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/excel_operator_pviot_insert_symbol.gif">
 <meta property="og:image" content="https://onlinecoxx.github.io/static_blog/2020/01/20/excel-pivot/excel_operator_filter_generator.gif">
 <meta property="article:published_time" content="2020-01-20T04:59:03.000Z">
-<meta property="article:modified_time" content="2020-02-01T15:03:25.715Z">
+<meta property="article:modified_time" content="2020-02-01T15:38:00.423Z">
 <meta property="article:author" content="coxx_jie">
 <meta property="article:tag" content="wps excel">
 <meta name="twitter:card" content="summary">
@@ -236,7 +236,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-01 23:03:25" itemprop="dateModified" datetime="2020-02-01T23:03:25+08:00">2020-02-01</time>
+                <time title="修改时间：2020-02-01 23:38:00" itemprop="dateModified" datetime="2020-02-01T23:38:00+08:00">2020-02-01</time>
               </span>
 
           
@@ -318,7 +318,7 @@
 <li><p><strong>提供简明、有吸引力并且带有批注的联机报表或打印报表。</strong></p>
 </li>
 </ol>
-<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="创建数据透视表"><a href="#创建数据透视表" class="headerlink" title="创建数据透视表"></a>创建数据透视表</h3><p>在Excel的“插入”选项卡中（WPS在“数据”选项卡中），选中对应数据表“点击数据透视表”，建立数据头数据透视表。默认先选择列一行后选择数值类维度多行，Excel会自动识别。</p>
+<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="创建数据透视表"><a href="#创建数据透视表" class="headerlink" title="创建数据透视表"></a>创建数据透视表</h3><p>在Excel的“插入”选项卡中（WPS在“数据”选项卡中），选中对应数据表“点击数据透视表”，建立数据头数据透视表。默认先选择列（特征维度）一行后选择数值类维度多行，Excel会自动识别。</p>
 <p><img src="excel_operator_create_01.gif" alt="2"></p>
 <h3 id="刷新所有数据透视表-更改数据源"><a href="#刷新所有数据透视表-更改数据源" class="headerlink" title="刷新所有数据透视表/更改数据源"></a>刷新所有数据透视表/更改数据源</h3><div class="note warning">
             <p>默认情况下选择的数据后Excel和WPS的数据将不发生改变，除非进行手动更新，而手动更新数据信息，在更改数据源左边选项卡上有个“刷新”，点击选择便可以更新相关数据源信息。</p>
@@ -328,11 +328,15 @@
 <p><img src="excel_operator_update_origin.gif" alt="2"></p>
 <h3 id="转换为普通表格"><a href="#转换为普通表格" class="headerlink" title="转换为普通表格"></a>转换为普通表格</h3><p>转换为普通表操作非常简单，就直接复制。最后根据自己的需求选择粘贴格式即可。</p>
 <p><img src="excel_operator_transform_univer_table.gif" alt="3"></p>
-<h3 id="数据透视表排序"><a href="#数据透视表排序" class="headerlink" title="数据透视表排序"></a>数据透视表排序</h3><p>选择对应透视表的维度项已经默认和筛选过滤的功能，可以自行选择排序方式，Excel会自动根据先选择先排序后选后排的方式进行排序显示，注：文字安装字典顺序排列。</p>
+<h3 id="数据透视表排序"><a href="#数据透视表排序" class="headerlink" title="数据透视表排序"></a>数据透视表排序</h3><p>选择对应透视表的维度项已经默认和筛选过滤的功能，可以自行选择排序方式，Excel会自动根据先选择先排序后选后排的方式进行排序显示。</p>
+<div class="note info">
+            <p>中英文默认都是按照字典顺序排列。</p>
+          </div>
+
 <p><img src="excel_operator_pviot_sort.gif" alt="3"></p>
-<h3 id="数据透视表插入公式"><a href="#数据透视表插入公式" class="headerlink" title="数据透视表插入公式"></a>数据透视表插入公式</h3><p>想要几个维度经过一定逻辑表达生成一个复合新维度，这个时候需要用到插入字段，选择组合成表达式。</p>
+<h3 id="数据透视表插入公式"><a href="#数据透视表插入公式" class="headerlink" title="数据透视表插入公式"></a>数据透视表插入公式</h3><p>想要几个维度经过一定逻辑表达生成一个复合新维度，这个时候仅需插入字段，选择组合成表达式即可生成新数值型维度。</p>
 <p><img src="excel_operator_pviot_insert_symbol.gif" alt="3"></p>
-<h3 id="使用切片器"><a href="#使用切片器" class="headerlink" title="使用切片器"></a>使用切片器</h3><p>有时候我们针对一个分类变量进行观察影响程度，这个时候需要用到切片器帮助我们查看每一个小细项数据维度的真实情况，便于增强关注度。</p>
+<h3 id="使用切片器"><a href="#使用切片器" class="headerlink" title="使用切片器"></a>使用切片器</h3><p>有时候我们针对一个或者几个特定分类变量进行观察影响程度，这个时候需要用到切片器帮助我们查看每一小细维度项数据的真实情况，利于对应数据下钻增强对应关注度。</p>
 <p><img src="excel_operator_filter_generator.gif" alt="3"></p>
 <p><a href="http://www.sohu.com/a/288764846_723240" target="_blank" rel="noopener" class="LinkCard">数据透视表-实用技巧大全</a></p>
 <p>&lt;待续…&gt;</p>
